@@ -48,3 +48,7 @@ Thumbs.db
 
 # TypeScript incremental build cache
 *.tsbuildinfo
+
+# Angular service worker generated files
+ngsw-worker.js
+ngsw.json
