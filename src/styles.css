@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+/* 1. Ionic base CSS — imported unlayered so it outranks Tailwind's @layer base */
+@import '@ionic/angular/css/core.css';
+@import '@ionic/angular/css/normalize.css';
+@import '@ionic/angular/css/structure.css';
+@import '@ionic/angular/css/typography.css';
+@import '@ionic/angular/css/display.css';
+
+/* 2. Tailwind v4 — CSS-first, all utilities in @layer utilities */
+@import "tailwindcss";
+
+/* 3. Gold colour palette — extends Tailwind's default theme */
+@theme {
+  --color-gold-50: #fffae5;
+  --color-gold-100: #fff6cc;
+  --color-gold-200: #ffec99;
+  --color-gold-300: #ffe366;
+  --color-gold-400: #ffda33;
+  --color-gold-500: #ffd000;
+  --color-gold-600: #cca700;
+  --color-gold-700: #997d00;
+  --color-gold-800: #665300;
+  --color-gold-900: #332a00;
+  --color-gold-950: #241d00;
+}
+
+/* 4. Override Ionic default primary (blue) with gold-500 */
+:root {
+  --ion-color-primary: #ffd000;
+  --ion-color-primary-rgb: 255, 208, 0;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0, 0, 0;
+  --ion-color-primary-shade: #cca700;
+  --ion-color-primary-tint: #ffd51a;
+}
