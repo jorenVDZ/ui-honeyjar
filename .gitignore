@@ -52,3 +52,7 @@ Thumbs.db
 # Angular service worker generated files
 ngsw-worker.js
 ngsw.json
+
+# Playwright output
+playwright-report/
+test-results/
